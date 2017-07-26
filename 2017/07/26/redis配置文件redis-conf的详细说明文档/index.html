@@ -93,12 +93,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="hellen的博客">
-<meta property="og:url" content="https://hellenzhou.github.io/index.html">
+<meta name="description" content="redis配置文件redis-conf的详细说明文档参数说明 redis.conf 配置项说明如下：  Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程 daemonize no 当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定 pidfile /var/run/redis.pid">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="https://hellenzhou.github.io/2017/07/26/redis配置文件redis-conf的详细说明文档/index.html">
 <meta property="og:site_name" content="hellen的博客">
+<meta property="og:description" content="redis配置文件redis-conf的详细说明文档参数说明 redis.conf 配置项说明如下：  Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程 daemonize no 当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定 pidfile /var/run/redis.pid">
+<meta property="og:updated_time" content="2017-07-26T08:45:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hellen的博客">
+<meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="redis配置文件redis-conf的详细说明文档参数说明 redis.conf 配置项说明如下：  Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程 daemonize no 当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定 pidfile /var/run/redis.pid">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://hellenzhou.github.io/"/>
+  <link rel="canonical" href="https://hellenzhou.github.io/2017/07/26/redis配置文件redis-conf的详细说明文档/"/>
 
 
 
 
 
-  <title>hellen的博客</title>
+  <title>tags | hellen的博客</title>
   
 
 
@@ -157,9 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -270,9 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/26/redis配置文件redis-conf的详细说明文档/" itemprop="url">tags</a></h1>
+          <h1 class="post-title" itemprop="name headline">tags</h1>
         
 
         <div class="post-meta">
@@ -319,9 +319,7 @@
       
 
       
-        
-          
-            <h4 id="redis配置文件redis-conf的详细说明文档"><a href="#redis配置文件redis-conf的详细说明文档" class="headerlink" title="redis配置文件redis-conf的详细说明文档"></a>redis配置文件redis-conf的详细说明文档</h4><p>参数说明</p>
+        <h4 id="redis配置文件redis-conf的详细说明文档"><a href="#redis配置文件redis-conf的详细说明文档" class="headerlink" title="redis配置文件redis-conf的详细说明文档"></a>redis配置文件redis-conf的详细说明文档</h4><p>参数说明</p>
 <p>redis.conf 配置项说明如下：</p>
 <ol>
 <li>Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程<br> daemonize no</li>
@@ -359,20 +357,27 @@
 <li>指定包含其它的配置文件，可以在同一主机上多个Redis实例之间使用同一份配置文件，而同时各个实例又拥有自己的特定配置文件<br>include /path/to/local.conf</li>
 </ol>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -380,21 +385,22 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -402,6 +408,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -422,8 +432,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/IMG_0134.jpg"
@@ -467,6 +486,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#redis配置文件redis-conf的详细说明文档"><span class="nav-number">1.</span> <span class="nav-text">redis配置文件redis-conf的详细说明文档</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -587,10 +622,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
