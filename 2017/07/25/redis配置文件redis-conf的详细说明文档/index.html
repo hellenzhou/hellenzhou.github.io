@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="参数说明 redis.conf 配置项说明如下：  Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程 daemonize no 当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定 pidfile /var/run/redis.pid 指定Redis监听端口，默认端口为6379，作者在">
+<meta name="description" content="启动 Redis1$ redis-server 查看 redis 是否启动？1$ redis-cli 以上命令将打开以下终端：1234redis 127.0.0.1:6379&amp;gt;127.0.0.1 是本机 IP ，6379 是 redis 服务端口。现在我们输入 PING 命令。redis 127.0.0.1:6379&amp;gt; pingPONG 在以上实例中我们连接到本地的 redis 服务并">
 <meta property="og:type" content="article">
 <meta property="og:title" content="redis配置文件redis-conf的详细说明文档">
 <meta property="og:url" content="https://hellenzhou.github.io/2017/07/25/redis配置文件redis-conf的详细说明文档/index.html">
 <meta property="og:site_name" content="hellen的博客">
-<meta property="og:description" content="参数说明 redis.conf 配置项说明如下：  Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程 daemonize no 当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定 pidfile /var/run/redis.pid 指定Redis监听端口，默认端口为6379，作者在">
-<meta property="og:updated_time" content="2017-07-26T09:02:33.000Z">
+<meta property="og:description" content="启动 Redis1$ redis-server 查看 redis 是否启动？1$ redis-cli 以上命令将打开以下终端：1234redis 127.0.0.1:6379&amp;gt;127.0.0.1 是本机 IP ，6379 是 redis 服务端口。现在我们输入 PING 命令。redis 127.0.0.1:6379&amp;gt; pingPONG 在以上实例中我们连接到本地的 redis 服务并">
+<meta property="og:updated_time" content="2017-08-03T11:49:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="redis配置文件redis-conf的详细说明文档">
-<meta name="twitter:description" content="参数说明 redis.conf 配置项说明如下：  Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程 daemonize no 当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定 pidfile /var/run/redis.pid 指定Redis监听端口，默认端口为6379，作者在">
+<meta name="twitter:description" content="启动 Redis1$ redis-server 查看 redis 是否启动？1$ redis-cli 以上命令将打开以下终端：1234redis 127.0.0.1:6379&amp;gt;127.0.0.1 是本机 IP ，6379 是 redis 服务端口。现在我们输入 PING 命令。redis 127.0.0.1:6379&amp;gt; pingPONG 在以上实例中我们连接到本地的 redis 服务并">
 
 
 
@@ -254,7 +254,7 @@
   
   
 
-  <article class="post post-type-tags " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://hellenzhou.github.io/2017/07/25/redis配置文件redis-conf的详细说明文档/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -319,7 +319,15 @@
       
 
       
-        <p>参数说明</p>
+        <h5 id="启动-Redis"><a href="#启动-Redis" class="headerlink" title="启动 Redis"></a>启动 Redis</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-server</div></pre></td></tr></table></figure>
+<h5 id="查看-redis-是否启动？"><a href="#查看-redis-是否启动？" class="headerlink" title="查看 redis 是否启动？"></a>查看 redis 是否启动？</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-cli</div></pre></td></tr></table></figure>
+<h5 id="以上命令将打开以下终端："><a href="#以上命令将打开以下终端：" class="headerlink" title="以上命令将打开以下终端："></a>以上命令将打开以下终端：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">redis 127.0.0.1:6379&gt;</div><div class="line">127.0.0.1 是本机 IP ，6379 是 redis 服务端口。现在我们输入 PING 命令。</div><div class="line">redis 127.0.0.1:6379&gt; ping</div><div class="line">PONG</div></pre></td></tr></table></figure>
+<h5 id="在以上实例中我们连接到本地的-redis-服务并执行-PING-命令，该命令用于检测-redis-服务是否启动。在远程服务上执行命令如果需要在远程-redis-服务上执行命令，同样我们使用的也是-redis-cli-命令。"><a href="#在以上实例中我们连接到本地的-redis-服务并执行-PING-命令，该命令用于检测-redis-服务是否启动。在远程服务上执行命令如果需要在远程-redis-服务上执行命令，同样我们使用的也是-redis-cli-命令。" class="headerlink" title="在以上实例中我们连接到本地的 redis 服务并执行 PING 命令，该命令用于检测 redis 服务是否启动。在远程服务上执行命令如果需要在远程 redis 服务上执行命令，同样我们使用的也是 redis-cli 命令。"></a>在以上实例中我们连接到本地的 redis 服务并执行 PING 命令，该命令用于检测 redis 服务是否启动。在远程服务上执行命令如果需要在远程 redis 服务上执行命令，同样我们使用的也是 redis-cli 命令。</h5><h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-cli -h host -p port -a password</div></pre></td></tr></table></figure>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><ul>
+<li>以下实例演示了如何连接到主机为 127.0.0.1，端口为 6379 ，密码为 mypass 的 redis 服务上。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$redis-cli -h 127.0.0.1 -p 6379 -a &quot;mypass&quot;</div><div class="line">redis 127.0.0.1:6379&gt;</div><div class="line">redis 127.0.0.1:6379&gt; PING</div><div class="line"></div><div class="line">PONG</div></pre></td></tr></table></figure>
+<p>参数说明</p>
 <p>redis.conf 配置项说明如下：</p>
 <ol>
 <li>Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程<br> daemonize no</li>
@@ -448,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/IMG_0134.jpg"
@@ -493,6 +510,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#启动-Redis"><span class="nav-number">1.</span> <span class="nav-text">启动 Redis</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#查看-redis-是否启动？"><span class="nav-number">2.</span> <span class="nav-text">查看 redis 是否启动？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#以上命令将打开以下终端："><span class="nav-number">3.</span> <span class="nav-text">以上命令将打开以下终端：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在以上实例中我们连接到本地的-redis-服务并执行-PING-命令，该命令用于检测-redis-服务是否启动。在远程服务上执行命令如果需要在远程-redis-服务上执行命令，同样我们使用的也是-redis-cli-命令。"><span class="nav-number">4.</span> <span class="nav-text">在以上实例中我们连接到本地的 redis 服务并执行 PING 命令，该命令用于检测 redis 服务是否启动。在远程服务上执行命令如果需要在远程 redis 服务上执行命令，同样我们使用的也是 redis-cli 命令。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#语法"><span class="nav-number">5.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实例"><span class="nav-number">6.</span> <span class="nav-text">实例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
