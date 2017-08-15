@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
+<html lang="zh-Hans">
+  <head>
+    
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
 
@@ -31,6 +22,26 @@
 
 
 
+
+
+
+
+
+
+
+  <link rel="alternate" href="/default" title="海伦的博客">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.5.0" />
+
+
+
+<link rel="canonical" href="https://hellenzhou.github.io/"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.5.0" />
 
 
 
@@ -38,293 +49,130 @@
 
 
   
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="海伦的博客">
-<meta property="og:url" content="https://hellenzhou.github.io/index.html">
-<meta property="og:site_name" content="海伦的博客">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="海伦的博客">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
     }
-  };
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
 
 
 
-  <link rel="canonical" href="https://hellenzhou.github.io/"/>
+    <title> 海伦的博客 </title>
+  </head>
 
-
-
-
-
-  <title>海伦的博客</title>
-  
-
-
-
-
-
-
-
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">海伦的博客</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">海伦的博客</a>
   </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 </div>
 
-<nav class="site-nav">
-  
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
 
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">海伦的博客</a>
+</div>
+
+<nav class="site-navbar">
   
     <ul id="menu" class="menu">
       
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+              首页
+            
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+              归档
+            
           </a>
         </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
       
     </ul>
   
-
-  
 </nav>
 
+      </header>
 
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+      <main id="main" class="main">
+        <div class="content-wrapper">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+  <section id="posts" class="posts">
     
       
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hellenzhou.github.io/2017/08/11/美丽长滩/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hellen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/IMG_0134.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海伦的博客">
-    </span>
-
-    
-      <header class="post-header">
-
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
         
+          <a class="post-link" href="/2017/08/11/美丽长滩/">美丽长滩岛</a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/11/美丽长滩/" itemprop="url">美丽长滩岛</a></h1>
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-08-11
+        </span>
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-11T14:38:31+08:00">
-                2017-08-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
+      </div>
+    </header>
 
     
     
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-      
-
+    <div class="post-content">
       
         
-          
-            <p>长滩岛（Boracay）是菲律宾中部的一座岛屿，面积10.32平方公里，人口12,003人（2000年）。属于热带海洋气候，行政区划属西米沙鄢大区的阿克兰省。<br>长滩岛属于西 米沙鄢群岛，位于班乃岛西北2公里，是菲律宾的旅游胜地之一。</p>
+        
+
+        
+          <p>长滩岛（Boracay）是菲律宾中部的一座岛屿，面积10.32平方公里，人口12,003人（2000年）。属于热带海洋气候，行政区划属西米沙鄢大区的阿克兰省。<br>长滩岛属于西 米沙鄢群岛，位于班乃岛西北2公里，是菲律宾的旅游胜地之一。</p>
 <img src="/2017/08/11/美丽长滩/IMG_0423.jpg" alt="IMG_0423.jpg" title="">
 <p> 在一家网店买了长滩的电话卡，加了客服的微信</p>
 
@@ -371,125 +219,44 @@
 <p> 和路过的风景</p>
  <img src="/2017/08/11/美丽长滩/IMG_0561.jpg" alt="IMG_0561.jpg" title="">
  <img src="/2017/08/11/美丽长滩/IMG_0560.jpg" alt="IMG_0560.jpg" title="">
-          
         
       
     </div>
-    
-    
-    
 
     
 
     
 
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
   </article>
 
-
     
       
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hellenzhou.github.io/2017/08/03/二叉树/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hellen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/IMG_0134.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海伦的博客">
-    </span>
-
-    
-      <header class="post-header">
-
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
         
+          <a class="post-link" href="/2017/08/03/二叉树/">二叉树</a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/03/二叉树/" itemprop="url">二叉树</a></h1>
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-08-03
+        </span>
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-03T16:02:30+08:00">
-                2017-08-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
+      </div>
+    </header>
 
     
     
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-      
-
+    <div class="post-content">
       
         
-          
-            <h4 id="二叉树的使用场景"><a href="#二叉树的使用场景" class="headerlink" title="二叉树的使用场景"></a>二叉树的使用场景</h4><ul>
+        
+
+        
+          <h4 id="二叉树的使用场景"><a href="#二叉树的使用场景" class="headerlink" title="二叉树的使用场景"></a>二叉树的使用场景</h4><ul>
 <li><p>AVL树:最早的平衡二叉树之一。应用相对其他数据结构比较少。windows对进程地址空间的管理用到了AVL树<br>红黑树:平衡二叉树，广泛用在C++的STL中。map和set都是用红黑树实现的。我们熟悉的STL的map容器底层是RBtree,当然指的不是unordered_map,后者是hash。<br>B/B+树用在磁盘文件组织 数据索引和数据库索引<br>Trie树 字典树，用在统计和排序大量字符串</p>
 </li>
 <li><p>epoll在内核中的实现，用红黑树管理事件块<br>nginx中，用红黑树管理timer等<br>Java的TreeMap实现<br>著名的linux进程调度Completely Fair Scheduler,用红黑树管理进程控制块<br>B和B+主要用在文件系统以及数据库中做索引等，比如Mysql：B-Tree Index in MySql<br>trie 树的一个典型应用是前缀匹配，比如下面这个很常见的场景，在我们输入时，搜索引擎会给予提示<br>还有比如IP选路，也是前缀匹配，一定程度会用到trie</p>
@@ -498,125 +265,44 @@
 </li>
 </ul>
 
-          
         
       
     </div>
-    
-    
-    
 
     
 
     
 
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
   </article>
 
-
     
       
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hellenzhou.github.io/2017/07/25/redis配置文件redis-conf的详细说明文档/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hellen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/IMG_0134.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海伦的博客">
-    </span>
-
-    
-      <header class="post-header">
-
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
         
+          <a class="post-link" href="/2017/07/25/redis配置文件redis-conf的详细说明文档/">redis配置文件redis-conf的详细说明文档</a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/25/redis配置文件redis-conf的详细说明文档/" itemprop="url">redis配置文件redis-conf的详细说明文档</a></h1>
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-07-25
+        </span>
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-25T00:00:00+08:00">
-                2017-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
+      </div>
+    </header>
 
     
     
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-      
-
+    <div class="post-content">
       
         
-          
-            <h5 id="启动-Redis"><a href="#启动-Redis" class="headerlink" title="启动 Redis"></a>启动 Redis</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-server</div></pre></td></tr></table></figure>
+        
+
+        
+          <h5 id="启动-Redis"><a href="#启动-Redis" class="headerlink" title="启动 Redis"></a>启动 Redis</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-server</div></pre></td></tr></table></figure>
 <h5 id="查看-redis-是否启动？"><a href="#查看-redis-是否启动？" class="headerlink" title="查看 redis 是否启动？"></a>查看 redis 是否启动？</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-cli</div></pre></td></tr></table></figure>
 <h5 id="以上命令将打开以下终端："><a href="#以上命令将打开以下终端：" class="headerlink" title="以上命令将打开以下终端："></a>以上命令将打开以下终端：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">redis 127.0.0.1:6379&gt;</div><div class="line">127.0.0.1 是本机 IP ，6379 是 redis 服务端口。现在我们输入 PING 命令。</div><div class="line">redis 127.0.0.1:6379&gt; ping</div><div class="line">PONG</div></pre></td></tr></table></figure>
 <h5 id="在以上实例中我们连接到本地的-redis-服务并执行-PING-命令，该命令用于检测-redis-服务是否启动。在远程服务上执行命令如果需要在远程-redis-服务上执行命令，同样我们使用的也是-redis-cli-命令。"><a href="#在以上实例中我们连接到本地的-redis-服务并执行-PING-命令，该命令用于检测-redis-服务是否启动。在远程服务上执行命令如果需要在远程-redis-服务上执行命令，同样我们使用的也是-redis-cli-命令。" class="headerlink" title="在以上实例中我们连接到本地的 redis 服务并执行 PING 命令，该命令用于检测 redis 服务是否启动。在远程服务上执行命令如果需要在远程 redis 服务上执行命令，同样我们使用的也是 redis-cli 命令。"></a>在以上实例中我们连接到本地的 redis 服务并执行 PING 命令，该命令用于检测 redis 服务是否启动。在远程服务上执行命令如果需要在远程 redis 服务上执行命令，同样我们使用的也是 redis-cli 命令。</h5><h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-cli -h host -p port -a password</div></pre></td></tr></table></figure>
@@ -662,417 +348,162 @@
 <li>指定包含其它的配置文件，可以在同一主机上多个Redis实例之间使用同一份配置文件，而同时各个实例又拥有自己的特定配置文件<br>include /path/to/local.conf</li>
 </ol>
 
-          
         
       
     </div>
-    
-    
-    
 
     
 
     
 
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
   </article>
 
-
     
       
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hellenzhou.github.io/2017/06/30/美丽长滩/index/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="hellen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/IMG_0134.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海伦的博客">
-    </span>
-
-    
-      <header class="post-header">
-
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
         
+          <a class="post-link" href="/2017/06/30/美丽长滩/index/"></a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/30/美丽长滩/index/" itemprop="url">未命名</a></h1>
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017-06-30
+        </span>
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-30T18:18:39+08:00">
-                2017-06-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
+      </div>
+    </header>
 
     
     
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-      
-
+    <div class="post-content">
       
         
-          
-            <p> title: 相册</p>
+        
+
+        
+          <p> title: 相册</p>
 <h2 id="noDate-‘true’"><a href="#noDate-‘true’" class="headerlink" title=" noDate: ‘true’"></a> noDate: ‘true’</h2><p> <link type="text/css" href="/fancybox/jquery.fancybox.css" rel="stylesheet"><br> <div class="instagram"><section class="archives album"><ul class="img-box-ul"></ul></section></div><br> <script src="/js/photo.js"></script></p>
 
-          
         
       
     </div>
-    
-    
-    
 
     
 
     
 
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
   </article>
-
 
     
   </section>
 
   
+  <nav class="pagination">
+    
+    
+  </nav>
 
 
           </div>
           
 
+        </div>  
+      </main>
 
-          
+      <footer id="footer" class="footer">
 
-        </div>
+  <div class="social-links">
+    
+      
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+          <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
 
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/IMG_0134.jpg"
-               alt="hellen" />
-          <p class="site-author-name" itemprop="name">hellen</p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives/">
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
-  <span class="author" itemprop="copyrightHolder">hellen</span>
-
   
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">hellen</span>
+  </span>
 </div>
+      </footer>
 
-
-  <div class="powered-by">
-    由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-  </div>
-
-  <span class="post-meta-divider">|</span>
-
-  <div class="theme-info">
-    主题 &mdash;
-    <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-      NexT.Muse
-    </a>
-  </div>
-
-
-        
-
-
-
-
-
-
-
-        
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
       </div>
-    </footer>
+    </div>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
+
     
 
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
 
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
-
-
-
-  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
   
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+    <script type="text/javascript" src="/js/src/even.js?v=2.5.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.5.0"></script>
 
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-</body>
+  </body>
 </html>
