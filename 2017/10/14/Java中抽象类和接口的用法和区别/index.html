@@ -8,13 +8,16 @@
   <link rel="dns-prefetch" href="https://hellenzhou.github.io">
   <title>Java中抽象类和接口的用法和区别 | 技术文章记录</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="一、抽象类1、抽象类 包含一个抽象方法的类就是抽象类 2、抽象方法 声明而未被实现的方法，抽象方法必须使用abstract关键词字声明 1234567   public abstract class People &amp;#123;  //关键词abstract，声明该类为抽象类    public int age;    public void Num() &amp;#123;    &amp;#125;    pu">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Java中抽象类和接口的用法和区别">
 <meta property="og:url" content="https://hellenzhou.github.io/2017/10/14/Java中抽象类和接口的用法和区别/index.html">
 <meta property="og:site_name" content="技术文章记录">
-<meta property="og:updated_time" content="2017-10-14T03:18:33.000Z">
+<meta property="og:description" content="一、抽象类1、抽象类 包含一个抽象方法的类就是抽象类 2、抽象方法 声明而未被实现的方法，抽象方法必须使用abstract关键词字声明 1234567   public abstract class People &amp;#123;  //关键词abstract，声明该类为抽象类    public int age;    public void Num() &amp;#123;    &amp;#125;    pu">
+<meta property="og:updated_time" content="2017-10-14T03:26:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java中抽象类和接口的用法和区别">
+<meta name="twitter:description" content="一、抽象类1、抽象类 包含一个抽象方法的类就是抽象类 2、抽象方法 声明而未被实现的方法，抽象方法必须使用abstract关键词字声明 1234567   public abstract class People &amp;#123;  //关键词abstract，声明该类为抽象类    public int age;    public void Num() &amp;#123;    &amp;#125;    pu">
   
     <link rel="alternative" href="/atom.xml" title="技术文章记录" type="application/atom+xml">
   
@@ -160,7 +163,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="一、抽象类"><a href="#一、抽象类" class="headerlink" title="一、抽象类"></a>一、抽象类</h4><p>1、抽象类</p>
+<p>包含一个抽象方法的类就是抽象类</p>
+<p>2、抽象方法</p>
+<p>声明而未被实现的方法，抽象方法必须使用abstract关键词字声明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line">  public abstract class People &#123;  //关键词abstract，声明该类为抽象类</div><div class="line">    public int age;</div><div class="line">    public void Num() &#123;</div><div class="line">    &#125;</div><div class="line">    public abstract Name(); //声明该方法为抽象方法</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>3、抽象类被子类继承，子类（如果不是抽象类）必须重写抽象类中的所有抽象方法</p>
+<p>4、抽象类不能被直接实例化，要通过其子类进行实例化</p>
+<p>5、只要包含一个抽象方法的抽象类，该方法必须要定义成抽象类，不管是否还包含有其他方法。</p>
+<p>6、子类中的抽象方法不能与父类的抽象方法同名。</p>
+<p>7、abstract不能与final并列修饰同一个类。</p>
+<p>8、abstract 不能与private、static、final或native并列修饰同一个方法。</p>
+
       
 
       
