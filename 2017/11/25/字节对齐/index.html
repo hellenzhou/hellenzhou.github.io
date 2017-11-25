@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://hellenzhou.github.io">
-  <title>技术文章记录</title>
+  <title>字节对齐 | 技术文章记录</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="技术文章记录">
-<meta property="og:url" content="https://hellenzhou.github.io/index.html">
+  <meta name="description" content="引言   &amp;emsp;&amp;emsp; &amp;emsp;&amp;emsp; 考虑下面的结构体定义：    123456typedef struct&amp;#123;   char  c1;   short s;    char  c2;    int   i;&amp;#125;T_FOO;    &amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;假设这个结构体的成员在内存中是紧凑排列的，且c1的起始地址是0，则s的地址就是1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字节对齐">
+<meta property="og:url" content="https://hellenzhou.github.io/2017/11/25/字节对齐/index.html">
 <meta property="og:site_name" content="技术文章记录">
+<meta property="og:description" content="引言   &amp;emsp;&amp;emsp; &amp;emsp;&amp;emsp; 考虑下面的结构体定义：    123456typedef struct&amp;#123;   char  c1;   short s;    char  c2;    int   i;&amp;#125;T_FOO;    &amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;假设这个结构体的成员在内存中是紧凑排列的，且c1的起始地址是0，则s的地址就是1">
+<meta property="og:image" content="https://hellenzhou.github.io/2017/11/25/字节对齐/181344177568936.jpg">
+<meta property="og:updated_time" content="2017-11-25T13:07:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="技术文章记录">
+<meta name="twitter:title" content="字节对齐">
+<meta name="twitter:description" content="引言   &amp;emsp;&amp;emsp; &amp;emsp;&amp;emsp; 考虑下面的结构体定义：    123456typedef struct&amp;#123;   char  c1;   short s;    char  c2;    int   i;&amp;#125;T_FOO;    &amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;假设这个结构体的成员在内存中是紧凑排列的，且c1的起始地址是0，则s的地址就是1">
+<meta name="twitter:image" content="https://hellenzhou.github.io/2017/11/25/字节对齐/181344177568936.jpg">
   
     <link rel="alternative" href="/atom.xml" title="技术文章记录" type="application/atom+xml">
   
@@ -139,16 +145,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-字节对齐" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-字节对齐" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/25/字节对齐/">字节对齐</a>
+    <h1 class="article-title" itemprop="name">
+      字节对齐
     </h1>
   
 
@@ -273,63 +277,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/25/字节对齐/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-Java中抽象类和接口的用法和区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/14/Java中抽象类和接口的用法和区别/">Java中抽象类和接口的用法和区别</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/14/Java中抽象类和接口的用法和区别/" class="archive-article-date">
-  	<time datetime="2017-10-14T03:18:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="一、抽象类"><a href="#一、抽象类" class="headerlink" title="一、抽象类"></a>一、抽象类</h4><p>1、抽象类</p>
-<p>包含一个抽象方法的类就是抽象类</p>
-<p>2、抽象方法</p>
-<p>声明而未被实现的方法，抽象方法必须使用abstract关键词字声明</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line">  public abstract class People &#123;  //关键词abstract，声明该类为抽象类</div><div class="line">    public int age;</div><div class="line">    public void Num() &#123;</div><div class="line">    &#125;</div><div class="line">    public abstract Name(); //声明该方法为抽象方法</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>3、抽象类被子类继承，子类（如果不是抽象类）必须重写抽象类中的所有抽象方法</p>
-<p>4、抽象类不能被直接实例化，要通过其子类进行实例化</p>
-<p>5、只要包含一个抽象方法的抽象类，该方法必须要定义成抽象类，不管是否还包含有其他方法。</p>
-<p>6、子类中的抽象方法不能与父类的抽象方法同名。</p>
-<p>7、abstract不能与final并列修饰同一个类。</p>
-<p>8、abstract 不能与private、static、final或native并列修饰同一个方法。</p>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>运动<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -338,255 +305,74 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/14/Java中抽象类和接口的用法和区别/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://hellenzhou.github.io/2017/11/25/字节对齐/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
   
-    <article id="post-美丽长滩" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/11/美丽长滩/">美丽长滩岛</a>
-    </h1>
   
-
-        
-        <a href="/2017/08/11/美丽长滩/" class="archive-article-date">
-  	<time datetime="2017-08-11T06:38:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>长滩岛（Boracay）是菲律宾中部的一座岛屿，面积10.32平方公里，人口12,003人（2000年）。属于热带海洋气候，行政区划属西米沙鄢大区的阿克兰省，位于班乃岛西北2公里，是菲律宾的旅游胜地之一。</p>
-<p>坐着萌萌的嘟嘟车转圈</p>
-<p>中午的太阳还是有点大的</p>
-<img src="/2017/08/11/美丽长滩/IMG_0437.jpg" alt="IMG_0437.jpg" title="">
-<p>顺便理个发，入乡随俗了…</p>
-
-
-<p>路过海边</p>
-<img src="/2017/08/11/美丽长滩/IMG_0495.jpg" alt="IMG_0495.jpg" title="">
-
-<p>海边小村庄里，孩子们在玩耍呢…</p>
-<img src="/2017/08/11/美丽长滩/IMG_0530.jpg" alt="IMG_0530.jpg" title="">
-<p>  最爽的莫过于出海浮潜 船开到大海中就停了 导游便开始往海里扔面包屑 大家都开始蠢蠢欲动 会游泳的小伙伴们早就蓄势待发了 我虽然装备都带好…</p>
- <img src="/2017/08/11/美丽长滩/IMG_0472.jpg" alt="IMG_0472.jpg" title="">
- <img src="/2017/08/11/美丽长滩/IMG_0493.jpg" alt="IMG_0493.jpg" title="">
-<p> 然后发现人家还有长滩的玩耍。选择了一个笑脸伞，虽然坐飞机过去了，但是还是想坐坐笑…</p>
- 
-<p>  挂在螃蟹船的脚上看夕阳，真是美不胜收。可惜当地的管理不规范，螃蟹船的船主说好看30分钟，不到15分钟就上岸让我们下去又接上新的一波游客。夕阳…</p>
- 
-<p>  必须推荐，非常刺激！是非常！耍完整个手臂都痛。长滩风浪大，很适合玩这个！被甩进海里整个人都是懵的。我们六个人，5个人都被扔进海里了！最安全…</p>
- <img src="/2017/08/11/美丽长滩/IMG_0476.jpg" alt="IMG_0476.jpg" title="">
- 
- 
- <img src="/2017/08/11/美丽长滩/IMG_0501.jpg" alt="IMG_0501.jpg" title="">
- <img src="/2017/08/11/美丽长滩/IMG_0509.jpg" alt="IMG_0509.jpg" title="">
-<p>日落风帆是长滩特有的特色，而且很好玩，尤其是黄昏日落的时候，很惬意～情侣的话推荐包船</p>
-<img src="/2017/08/11/美丽长滩/IMG_0500.jpg" alt="IMG_0500.jpg" title="">
-<p>美丽的黄昏就是好基友，也能看到完美的背影…</p>
-<img src="/2017/08/11/美丽长滩/IMG_0510.jpg" alt="IMG_0510.jpg" title="">
-
-
-<img src="/2017/08/11/美丽长滩/IMG_0508.jpg" alt="IMG_0508.jpg" title=""> 
-<p>夜晚，本地的酒头晕了….</p>
-   
+    <a href="/2017/10/14/Java中抽象类和接口的用法和区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java中抽象类和接口的用法和区别</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
-<p>山顶的泳池  </p>
- 
- <img src="/2017/08/11/美丽长滩/IMG_0453.jpg" alt="IMG_0453.jpg" title="">
- <img src="/2017/08/11/美丽长滩/IMG_0455.jpg" alt="IMG_0455.jpg" title="">
-<p>回酒店睡个懒觉</p>
- 
-<p>突然想起白天可爱的小车</p>
- <img src="/2017/08/11/美丽长滩/IMG_0564.jpg" alt="IMG_0564.jpg" title="">
-<p> 和路过的风景</p>
- <img src="/2017/08/11/美丽长滩/IMG_0561.jpg" alt="IMG_0561.jpg" title="">
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/11/美丽长滩/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-二叉树" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/03/二叉树/">二叉树</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/03/二叉树/" class="archive-article-date">
-  	<time datetime="2017-08-03T08:02:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="二叉树的使用场景"><a href="#二叉树的使用场景" class="headerlink" title="二叉树的使用场景"></a>二叉树的使用场景</h4><ul>
-<li><p>AVL树:最早的平衡二叉树之一。应用相对其他数据结构比较少。windows对进程地址空间的管理用到了AVL树<br>红黑树:平衡二叉树，广泛用在C++的STL中。map和set都是用红黑树实现的。我们熟悉的STL的map容器底层是RBtree,当然指的不是unordered_map,后者是hash。<br>B/B+树用在磁盘文件组织 数据索引和数据库索引<br>Trie树 字典树，用在统计和排序大量字符串</p>
-</li>
-<li><p>epoll在内核中的实现，用红黑树管理事件块<br>nginx中，用红黑树管理timer等<br>Java的TreeMap实现<br>著名的linux进程调度Completely Fair Scheduler,用红黑树管理进程控制块<br>B和B+主要用在文件系统以及数据库中做索引等，比如Mysql：B-Tree Index in MySql<br>trie 树的一个典型应用是前缀匹配，比如下面这个很常见的场景，在我们输入时，搜索引擎会给予提示<br>还有比如IP选路，也是前缀匹配，一定程度会用到trie</p>
-</li>
-<li><p>跳表：Redis中就使用跳表，而不是红黑树来存储管理其中的元素（应该说的是一级元素-直接的Key,里面的value应该是有不同的数据结构）。</p>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/03/二叉树/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-redis配置文件redis-conf的详细说明文档" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/25/redis配置文件redis-conf的详细说明文档/">redis配置文件redis-conf的详细说明文档</a>
-    </h1>
-  
-
-        
-        <a href="/2017/07/25/redis配置文件redis-conf的详细说明文档/" class="archive-article-date">
-  	<time datetime="2017-07-24T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="启动-Redis"><a href="#启动-Redis" class="headerlink" title="启动 Redis"></a>启动 Redis</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-server</div></pre></td></tr></table></figure>
-<h5 id="查看-redis-是否启动？"><a href="#查看-redis-是否启动？" class="headerlink" title="查看 redis 是否启动？"></a>查看 redis 是否启动？</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-cli</div></pre></td></tr></table></figure>
-<h5 id="以上命令将打开以下终端："><a href="#以上命令将打开以下终端：" class="headerlink" title="以上命令将打开以下终端："></a>以上命令将打开以下终端：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">redis 127.0.0.1:6379&gt;</div><div class="line">127.0.0.1 是本机 IP ，6379 是 redis 服务端口。现在我们输入 PING 命令。</div><div class="line">redis 127.0.0.1:6379&gt; ping</div><div class="line">PONG</div></pre></td></tr></table></figure>
-<h5 id="在以上实例中我们连接到本地的-redis-服务并执行-PING-命令，该命令用于检测-redis-服务是否启动。在远程服务上执行命令如果需要在远程-redis-服务上执行命令，同样我们使用的也是-redis-cli-命令。"><a href="#在以上实例中我们连接到本地的-redis-服务并执行-PING-命令，该命令用于检测-redis-服务是否启动。在远程服务上执行命令如果需要在远程-redis-服务上执行命令，同样我们使用的也是-redis-cli-命令。" class="headerlink" title="在以上实例中我们连接到本地的 redis 服务并执行 PING 命令，该命令用于检测 redis 服务是否启动。在远程服务上执行命令如果需要在远程 redis 服务上执行命令，同样我们使用的也是 redis-cli 命令。"></a>在以上实例中我们连接到本地的 redis 服务并执行 PING 命令，该命令用于检测 redis 服务是否启动。在远程服务上执行命令如果需要在远程 redis 服务上执行命令，同样我们使用的也是 redis-cli 命令。</h5><h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ redis-cli -h host -p port -a password</div></pre></td></tr></table></figure>
-<h5 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h5><ul>
-<li>以下实例演示了如何连接到主机为 127.0.0.1，端口为 6379 ，密码为 mypass 的 redis 服务上。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$redis-cli -h 127.0.0.1 -p 6379 -a &quot;mypass&quot;</div><div class="line">redis 127.0.0.1:6379&gt;</div><div class="line">redis 127.0.0.1:6379&gt; PING</div><div class="line"></div><div class="line">PONG</div></pre></td></tr></table></figure>
-<p>参数说明</p>
-<p>redis.conf 配置项说明如下：</p>
-<ol>
-<li>Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程<br> daemonize no</li>
-<li>当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定<br> pidfile /var/run/redis.pid</li>
-<li>指定Redis监听端口，默认端口为6379，作者在自己的一篇博文中解释了为什么选用6379作为默认端口，因为6379在手机按键上MERZ对应的号码，而MERZ取自意大利歌女Alessia Merz的名字<br> port 6379</li>
-<li>绑定的主机地址<br> bind 127.0.0.1<br>5.当 客户端闲置多长时间后关闭连接，如果指定为0，表示关闭该功能<br> timeout 300</li>
-<li>指定日志记录级别，Redis总共支持四个级别：debug、verbose、notice、warning，默认为verbose<br> loglevel verbose</li>
-<li>日志记录方式，默认为标准输出，如果配置Redis为守护进程方式运行，而这里又配置为日志记录方式为标准输出，则日志将会发送给/dev/null<br> logfile stdout</li>
-<li>设置数据库的数量，默认数据库为0，可以使用SELECT <dbid>命令在连接上指定数据库id<br> databases 16</dbid></li>
-<li><p>指定在多长时间内，有多少次更新操作，就将数据同步到数据文件，可以多个条件配合<br> save <seconds> <changes><br> Redis默认配置文件中提供了三个条件：<br> save 900 1<br> save 300 10<br> save 60 10000<br> 分别表示900秒（15分钟）内有1个更改，300秒（5分钟）内有10个更改以及60秒内有10000个更改。</changes></seconds></p>
-</li>
-<li><p>指定存储至本地数据库时是否压缩数据，默认为yes，Redis采用LZF压缩，如果为了节省CPU时间，可以关闭该选项，但会导致数据库文件变的巨大<br>rdbcompression yes</p>
-</li>
-<li>指定本地数据库文件名，默认值为dump.rdb<br>dbfilename dump.rdb</li>
-<li>指定本地数据库存放目录<br>dir ./</li>
-<li>设置当本机为slav服务时，设置master服务的IP地址及端口，在Redis启动时，它会自动从master进行数据同步<br>slaveof <masterip> <masterport></masterport></masterip></li>
-<li>当master服务设置了密码保护时，slav服务连接master的密码<br>masterauth <master-password></master-password></li>
-<li>设置Redis连接密码，如果配置了连接密码，客户端在连接Redis时需要通过AUTH <password>命令提供密码，默认关闭<br>requirepass foobared</password></li>
-<li>设置同一时间最大客户端连接数，默认无限制，Redis可以同时打开的客户端连接数为Redis进程可以打开的最大文件描述符数，如果设置 maxclients 0，表示不作限制。当客户端连接数到达限制时，Redis会关闭新的连接并向客户端返回max number of clients reached错误信息<br>maxclients 128</li>
-<li>指定Redis最大内存限制，Redis在启动时会把数据加载到内存中，达到最大内存后，Redis会先尝试清除已到期或即将到期的Key，当此方法处理 后，仍然到达最大内存设置，将无法再进行写入操作，但仍然可以进行读取操作。Redis新的vm机制，会把Key存放内存，Value会存放在swap区<br>maxmemory <bytes></bytes></li>
-<li>指定是否在每次更新操作后进行日志记录，Redis在默认情况下是异步的把数据写入磁盘，如果不开启，可能会在断电时导致一段时间内的数据丢失。因为 redis本身同步数据文件是按上面save条件来同步的，所以有的数据会在一段时间内只存在于内存中。默认为no<br>appendonly no</li>
-<li>指定更新日志文件名，默认为appendonly.aof<br> appendfilename appendonly.aof</li>
-<li><p>指定更新日志条件，共有3个可选值：<br>no：表示等操作系统进行数据缓存同步到磁盘（快）<br>always：表示每次更新操作后手动调用fsync()将数据写到磁盘（慢，安全）<br>everysec：表示每秒同步一次（折衷，默认值）<br>appendfsync everysec</p>
-</li>
-<li><p>指定是否启用虚拟内存机制，默认值为no，简单的介绍一下，VM机制将数据分页存放，由Redis将访问量较少的页即冷数据swap到磁盘上，访问多的页面由磁盘自动换出到内存中（在后面的文章我会仔细分析Redis的VM机制）<br> vm-enabled no</p>
-</li>
-<li>虚拟内存文件路径，默认值为/tmp/redis.swap，不可多个Redis实例共享<br> vm-swap-file /tmp/redis.swap</li>
-<li>将所有大于vm-max-memory的数据存入虚拟内存,无论vm-max-memory设置多小,所有索引数据都是内存存储的(Redis的索引数据 就是keys),也就是说,当vm-max-memory设置为0的时候,其实是所有value都存在于磁盘。默认值为0<br> vm-max-memory 0</li>
-<li>Redis swap文件分成了很多的page，一个对象可以保存在多个page上面，但一个page上不能被多个对象共享，vm-page-size是要根据存储的 数据大小来设定的，作者建议如果存储很多小对象，page大小最好设置为32或者64bytes；如果存储很大大对象，则可以使用更大的page，如果不 确定，就使用默认值<br> vm-page-size 32</li>
-<li>设置swap文件中的page数量，由于页表（一种表示页面空闲或使用的bitmap）是在放在内存中的，，在磁盘上每8个pages将消耗1byte的内存。<br> vm-pages 134217728</li>
-<li>设置访问swap文件的线程数,最好不要超过机器的核数,如果设置为0,那么所有对swap文件的操作都是串行的，可能会造成比较长时间的延迟。默认值为4<br> vm-max-threads 4</li>
-<li>设置在向客户端应答时，是否把较小的包合并为一个包发送，默认为开启<br>glueoutputbuf yes</li>
-<li>指定在超过一定的数量或者最大的元素超过某一临界值时，采用一种特殊的哈希算法<br>hash-max-zipmap-entries 64<br>hash-max-zipmap-value 512</li>
-<li>指定是否激活重置哈希，默认为开启（后面在介绍Redis的哈希算法时具体介绍）<br>activerehashing yes</li>
-<li>指定包含其它的配置文件，可以在同一主机上多个Redis实例之间使用同一份配置文件，而同时各个实例又拥有自己的特定配置文件<br>include /path/to/local.conf</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/07/25/redis配置文件redis-conf的详细说明文档/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+</nav>
 
 
 
@@ -594,9 +380,10 @@
 
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
   
 
 
@@ -619,8 +406,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
