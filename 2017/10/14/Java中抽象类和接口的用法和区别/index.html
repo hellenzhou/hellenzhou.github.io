@@ -85,6 +85,7 @@
 <meta property="og:url" content="https://hellenzhou.github.io/2017/10/14/Java中抽象类和接口的用法和区别/index.html">
 <meta property="og:site_name" content="技术文章记录">
 <meta property="og:description" content="一、抽象类1、抽象类 包含一个抽象方法的类就是抽象类 2、抽象方法 声明而未被实现的方法，抽象方法必须使用abstract关键词字声明 1234567   public abstract class People &amp;#123;  //关键词abstract，声明该类为抽象类    public int age;    public void Num() &amp;#123;    &amp;#125;    pu">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-10-14T03:26:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java中抽象类和接口的用法和区别">
@@ -302,7 +303,7 @@
 <p>包含一个抽象方法的类就是抽象类</p>
 <p>2、抽象方法</p>
 <p>声明而未被实现的方法，抽象方法必须使用abstract关键词字声明</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line">  public abstract class People &#123;  //关键词abstract，声明该类为抽象类</div><div class="line">    public int age;</div><div class="line">    public void Num() &#123;</div><div class="line">    &#125;</div><div class="line">    public abstract Name(); //声明该方法为抽象方法</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">  public abstract class People &#123;  //关键词abstract，声明该类为抽象类</span><br><span class="line">    public int age;</span><br><span class="line">    public void Num() &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    public abstract Name(); //声明该方法为抽象方法</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>3、抽象类被子类继承，子类（如果不是抽象类）必须重写抽象类中的所有抽象方法</p>
 <p>4、抽象类不能被直接实例化，要通过其子类进行实例化</p>
 <p>5、只要包含一个抽象方法的抽象类，该方法必须要定义成抽象类，不管是否还包含有其他方法。</p>
